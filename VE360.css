@@ -1,0 +1,139 @@
+:root {
+        /* Standard Professional Palette */
+        --primary: #2563eb;    /* Standard Trust Blue */
+        --secondary: #64748b;  /* Professional Gray */
+        --bg-white: #ffffff40;
+        --bg-subtle: #f8fafc;
+        --text-header: #0f172a;
+        --text-body: #334155;
+        --border: #e2e8f0;
+        --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', -apple-system, sans-serif; }
+    
+    body { 
+        background-color: var(--bg-white); 
+        color: var(--text-body); 
+        line-height: 1.6; 
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .container { max-width: 1050px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* Navigation - Clean & Standard */
+    nav { 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 1.5rem 0;
+        border-bottom: 1px solid var(--border);
+    }
+    .logo { 
+        font-weight: 700; 
+        font-size: 1.1rem; 
+        color: var(--text-header); 
+        letter-spacing: -0.5px;
+        text-transform: uppercase;
+    }
+    .social-links a { 
+        color: var(--secondary); 
+        text-decoration: none; 
+        margin-left: 1.5rem; 
+        font-size: 0.85rem; 
+        font-weight: 500;
+        transition: color 0.2s;
+    }
+    .social-links a:hover { color: var(--primary); }
+
+    /* Hero - High Impact / Standard Alignment */
+    .hero { padding: 80px 0; text-align: left; max-width: 800px; }
+    .badge { 
+        color: var(--primary); 
+        background: #eff6ff;
+        padding: 4px 12px; 
+        border-radius: 4px; 
+        font-size: 0.75rem; 
+        font-weight: 700;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+    h1 { 
+        font-size: clamp(2.2rem, 5vw, 3.2rem); 
+        color: var(--text-header); 
+        font-weight: 800; 
+        line-height: 1.2; 
+        margin-bottom: 1.5rem;
+    }
+    .hero p { 
+        font-size: 1.15rem; 
+        color: var(--secondary); 
+        margin-bottom: 2rem;
+    }
+
+    /* Projects Grid - Structured & Clean */
+    .section-header { margin: 3rem 0 1.5rem; border-left: 4px solid var(--primary); padding-left: 1rem; }
+    .section-header h2 { font-size: 1.5rem; color: var(--text-header); }
+    
+    .gallery-grid { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+        gap: 2rem; 
+    }
+    
+    .gallery-item { 
+        background: var(--bg-white); 
+        border-radius: 8px; 
+        overflow: hidden; 
+        border: 1px solid var(--border);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .gallery-item:hover { 
+        transform: translateY(-4px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+    
+    .gallery-img { 
+        width: 100%; height: 200px; 
+        background: var(--bg-subtle); 
+        display: flex; align-items: center; justify-content: center;
+        border-bottom: 1px solid var(--border);
+        color: #94a3b8;
+    }
+
+    .gallery-info { padding: 1.5rem; }
+    .gallery-tag { font-size: 0.7rem; color: var(--primary); font-weight: 700; text-transform: uppercase; }
+    .gallery-info h3 { margin-top: 0.5rem; font-size: 1.1rem; color: var(--text-header); }
+    .gallery-info p { font-size: 0.9rem; color: var(--secondary); margin-top: 0.5rem; }
+
+    /* CTA Section */
+    .cta-card { 
+        background: var(--text-header); 
+        color: white;
+        padding: 4rem 2rem; 
+        border-radius: 8px; 
+        text-align: center; 
+        margin: 5rem 0; 
+    }
+    .cta-card h2 { margin-bottom: 1rem; }
+    .btn { 
+        display: inline-block; 
+        background: var(--primary); 
+        color: white; 
+        padding: 0.8rem 2rem; 
+        border-radius: 6px; 
+        text-decoration: none; 
+        font-weight: 600; 
+        margin-top: 1rem; 
+        transition: opacity 0.2s;
+    }
+    .btn:hover { opacity: 0.9; }
+
+    footer { 
+        text-align: center; 
+        padding: 3rem; 
+        color: var(--secondary); 
+        font-size: 0.85rem; 
+        border-top: 1px solid var(--border);
+    }
